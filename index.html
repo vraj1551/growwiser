@@ -48,16 +48,11 @@
               <li class="nav-item">
                 <a class="nav-link nav-link-active me-3" aria-current="page" href="index.html" style="color: black;">Home</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">For Candidates <i class="fa-solid fa-arrow-right"></i></a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">For Employers <i class="fa-solid fa-arrow-right"></i></a></li>
-                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link me-3" aria-current="page" href="services.html" style="color: black;">For Candidates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" aria-current="page" href="services.html" style="color: black;">For Employeers</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link me-3" href="aboutus.html" style="color: black;">About Us</a>
@@ -73,16 +68,59 @@
         </div>
       </nav>
 
-    <div id="hero" class="d-flex align-items-center">
+    <!-- <div id="hero" class="d-flex align-items-center">
         <div class="container">
-            <h1 class="w-75">Connecting Talent Globally, Building Success Locally.</h1>
-            <!-- <h2>We are team of professionals providing best recuitment</h2> -->
+            <h1>Welcome to Grow Wiser</h1>
+            <h2>We are team of professionals providing best recuitment</h2>
             <a href=""><span class="primary-button">Apply Now</span></a>
         </div>
+    </div> -->
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+  
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="dist/img/covid-19-coronavirus-disease-healthcare-workers-concept-professional-good-looking-asian-doctor-medical-worker-glasses-scrubs-cross-arms-smiling-white-background.jpg" class="d-block w-100 c-img" alt="Slide 1">
+          <div class="carousel-caption mb-5"> 
+                <p class="mt-5 fs-5 text-uppercase">We are team of professionals providing best recuitment</p>
+                <h3 class="display-1 fw-bolder text-capitalize">Welcome to grow wiser</h3>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-4 carousel-button">Apply now</button>
+          </div>
+        </div>
+        <div class="carousel-item active c-item">
+          <img src="dist/img/doctor-and-nurse-discuss-together-about-diagnosis-2022-06-22-07-59-39-utc.jpg" class="d-block w-100 c-img" alt="Slide 1">
+          <div class="carousel-caption mb-5"> 
+                <p class="mt-5 fs-5 text-uppercase">We are team of professionals providing best recuitment</p>
+                <h3 class="display-1 fw-bolder text-capitalize">Welcome to grow wiser</h3>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-4 carousel-button">Apply now</button>
+          </div>
+        </div>
+        <div class="carousel-item active c-item">
+          <img src="dist/img/nurse-working-with-dropper-2022-02-02-03-57-42-utc.jpg" class="d-block w-100 c-img" alt="Slide 1">
+          <div class="carousel-caption mb-5"> 
+                <p class="mt-5 fs-5 text-uppercase">We are team of professionals providing best recuitment</p>
+                <h3 class="display-1 fw-bolder text-capitalize">Welcome to grow wiser</h3>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-4 carousel-button">Apply now</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <main id="main">
 
+    <main id="main">
         <!-- Why Grow Wiser -->
         <section id="why-us" class="why-us">
             <div class="container">
@@ -91,7 +129,7 @@
                   <div class="content">
                     <h3>Why Choose Grow Wiser?</h3>
                     <p>
-                      Choose GrowWiser for transformative recruitment, connecting you with global talent beyond conventional solutions. Our international company tailors its approach to meet unique workforce needs, ensuring diverse, skilled professionals for clients. With a focus on efficiency, transparency, and innovation, GrowWiser builds a workforce exceeding expectations, ushering your organization into global success.
+                      Choose GrowWiser for transformative recruitment, connecting you with global talent beyond conventional solutions. Our international company tailors its approach to meet unique workforce needs, ensuring diverse, skilled professionals for clients. With a focus on efficiency, transparency, and innovation, GrowWiser builds a workforce exceeding expectations, ushering your organization into global success. 
                     </p>
                     <div class="text-center">
                       <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
@@ -174,8 +212,7 @@
           </div>
   
         </div>
-      </section>
-      <!-- End Counts Section -->
+      </section><!-- End Counts Section -->
   
 
       <section id="services" class="services">
@@ -187,12 +224,16 @@
           </div>
   
           <div class="row">
+            
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="icon-box">
-                <div class="icon"><i class="fas fa-heartbeat"></i></div>
-                <h4><a href="">Healthcare Recruitment</a></h4>
-                <p>Specializing in placing skilled professionals across the healthcare spectrum, including physicians, nurses, allied health professionals, and administrative staff.</p>
-              </div>
+              <!-- <a href=""> -->
+                <div class="icon-box">
+                  <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                  <h4>Healthcare Recruitment</h4>
+                  <p>Specializing in placing skilled professionals across the healthcare spectrum, including physicians, nurses, allied health professionals, and administrative staff.</p>
+                  <a href="#" class="learn-btn learn-color">Learn More</a>
+                </div>
+              <!-- </a> -->
             </div>
   
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
@@ -202,6 +243,8 @@
                 <p>Connecting passionate individuals with opportunities in the dynamic world of hospitality, ranging from culinary arts and hotel management to event planning and customer service.</p>
               </div>
             </div>
+
+            
   
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
               <div class="icon-box">
@@ -211,6 +254,25 @@
               </div>
             </div>
           </div>
+
+          <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-pills"></i></div>
+              <h4><a href="">Hospitality Recruitment</a></h4>
+              <p>Connecting passionate individuals with opportunities in the dynamic world of hospitality, ranging from culinary arts and hotel management to event planning and customer service.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-pills"></i></div>
+              <h4><a href="">Hospitality Recruitment</a></h4>
+              <p>Connecting passionate individuals with opportunities in the dynamic world of hospitality, ranging from culinary arts and hotel management to event planning and customer service.</p>
+            </div>
+          </div>
+        </div>
+
         </div>
       </section><!-- End Services Section -->
 
@@ -220,7 +282,7 @@
 
       <div class="section-title">
         <h2>Make an Appointment</h2>
-        <p>Submit your details and our recuitment executive will connect with you.</p>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>
 
       <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
@@ -284,7 +346,7 @@
 
       <div class="section-title">
         <h2>Our Team</h2>
-        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>
 
       <div class="row">
@@ -359,7 +421,7 @@
   </section><!-- End Doctors Section -->
 
   <!-- ======= Gallery Section ======= -->
-  <!-- <section id="gallery" class="gallery">
+  <section id="gallery" class="gallery">
     <div class="container">
 
       <div class="section-title">
@@ -436,17 +498,16 @@
         </div>
 
       </div>
-    </div> -->
-  <!-- </section> -->
-  <!-- End Gallery Section -->
+    </div>
+  </section><!-- End Gallery Section -->
 
   <!-- Contact -->
   <section id="contact" class="contact">
     <div class="container">
 
       <div class="section-title">
-        <h2>Contact Us</h2>
-        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        <h2>Contact</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>
     </div>
 
@@ -462,20 +523,19 @@
             <div class="address">
                 <i class="fa-solid fa-location-dot"></i>
               <h4>Location:</h4>
-              <p>Suite 15, First Floor 213 Kingsbury Road, Sri Abji Bapashree 
-                House, London, United Kingdom, NW9 8AQ</p>
+              <p>A108 Adam Street, New York, NY 535022</p>
             </div>
 
             <div class="email">
                 <i class="fa-regular fa-envelope"></i>
               <h4>Email:</h4>
-              <p>recruitment@growwiser.co.uk</p>
+              <p>info@example.com</p>
             </div>
 
             <div class="phone">
                 <i class="fa-solid fa-phone-volume"></i>
               <h4>Call:</h4>
-              <p>+44 7448646807</p>
+              <p>+1 5589 55488 55s</p>
             </div>
 
           </div>
@@ -484,7 +544,7 @@
 
         <div class="col-lg-8 mt-5 mt-lg-0">
 
-          <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -505,7 +565,7 @@
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
             <div class="text-center"><button type="submit">Send Message</button></div>
-          </form> -->
+          </form>
 
         </div>
 
@@ -524,10 +584,11 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <img src="dist/img/tranparent_logo.png" alt="" class="footer-logo">
             <p>
-              Suite 15, First Floor 213 Kingsbury Road, Sri Abji Bapashree 
-                House, London, United Kingdom, NW9 8AQ<br><br>
-              <strong>Phone:</strong> +44 7448646807<br>
-              <strong>Email:</strong> recruitment@growwiser.co.uk<br>
+              C-1 Nilkanth Duplex<br>
+              Vadodara, 390021<br>
+              Gujarat, India<br><br>
+              <strong>Phone:</strong> +91 1234567890<br>
+              <strong>Email:</strong> info@example.com<br>
             </p>
           </div>
 
