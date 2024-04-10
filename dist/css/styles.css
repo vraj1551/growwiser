@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body{
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -49,6 +52,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .social-links-icon{
   margin-right: 8px;
+  color: #777777;
 }
 
 /* Navbar */
@@ -180,6 +184,12 @@ h1,h2,h3,h4,h5,h6{
     line-height: 24px;
     margin-bottom: 30px;
   }
+  .primary-button{
+    margin-left: 0px;
+  }
+  .nav-link{
+    margin-right: 0px;
+  }
 }
 
 @media (max-height: 600px) {
@@ -240,6 +250,10 @@ section {
 }
 
 /* Why Us */
+.why-us .container{
+  display: flex;
+  justify-content: center;
+}
 .why-us .content {
   padding: 30px;
   background: #1977cc;
@@ -301,12 +315,23 @@ section {
   color: #848484;
 }
 
+@media only screen and (max-width: 480px)  {
+  .why-us .my-icon-box{
+    /* background-color: red !important; */
+    width: 100lvw;
+  }
+}
+
 /* Counts */
 .counts {
   background: #f1f7fd;
   padding: 70px 0 60px;
 }
 
+.counts .container{
+  display: flex;
+  justify-content: center;
+}
 .counts .count-box {
 padding: 30px 30px 25px 30px;
 width: 100%;
@@ -348,6 +373,14 @@ font-size: 14px;
 
 /* Services */
 
+
+@media only screen and (max-width: 480px){
+  .services .container .row{
+    display: flex;
+    width: 100lvw;
+  } 
+}
+
 .row{
 display: flex;
 justify-content: center;
@@ -358,6 +391,7 @@ padding-bottom: 40px;
 .services .icon-box {
   text-align: center;
   border: 1px solid #d5e1ed;
+  border-radius: 8px;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
 }
