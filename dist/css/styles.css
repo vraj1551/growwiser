@@ -1135,7 +1135,7 @@ min-height: 100vh;
   margin-left: 10px;
   color: #2c4964;
   margin-bottom: 15px;
-  font-size: 28px;
+  font-size: 24px;
 }
 .job .container .job-info p {
   margin-left: 10px;
@@ -1157,4 +1157,27 @@ min-height: 100vh;
 .skills-required li::before{
   content: '-';
   margin-right: 20px;
+}
+
+.job-type{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.job-type p{
+  margin-left: 10px;
+  color: #2c4964;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 24px;
+  font-size: 24px !important;
+}
+
+.job .apply{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.job .apply .section-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
