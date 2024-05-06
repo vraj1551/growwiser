@@ -530,10 +530,13 @@ margin-bottom: 14px;
 
 /* Make apply */
 
-
+#res{
+  color: green;
+}
 
 .apply .php-email-form {
   width: 100%;
+  justify-content: center;
 }
 
 .apply .php-email-form .form-group {
@@ -543,7 +546,7 @@ margin-bottom: 14px;
 .apply .php-email-form .validate {
   display: none;
   color: red;
-  margin: 0 0 15px 0;
+  /* margin: 0 0 0; */
   font-weight: 400;
   font-size: 13px;
 }
@@ -1127,7 +1130,7 @@ min-height: 100vh;
 }
 
 .job .job-info{
-  width: 110%;
+  width: 100%;
 }
 
 .job .container .job-info h3 {
@@ -1180,4 +1183,24 @@ min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.job-form{
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+}
+.job-form-layer2{
+  margin: 0 auto;
+  width: 90%;
+  background-color: blue;
+}
+.job-form-layer3{
+  margin: 0 auto;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

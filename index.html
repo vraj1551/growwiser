@@ -298,7 +298,7 @@
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>
 
-      <form action="forms/apply.php" method="post" role="form" class="php-email-form">
+      <form method="post" class="php-email-form" id="applicationForm">
         <div class="row">
           <div class="col-md-4 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -315,17 +315,17 @@
         </div>
         <div class="row">
           <div class="col-md-4 form-group mt-4">
-            <select name="department" id="department" class="form-select">
+            <select name="qualification" id="department" class="form-select">
               <option value="">Select Qualification</option>
-              <option value="Department 1">Diploma</option>
-              <option value="Department 2">Post Grad</option>
-              <option value="Department 3">Under Grad</option>
-              <option value="Department 4">Post Undergrad</option>
+              <option value="Diploma">Diploma</option>
+              <option value="Post Grad">Post Grad</option>
+              <option value="Under Grad">Under Grad</option>
+              <option value="Post Undergrad">Post Undergrad</option>
             </select>
             <div class="validate"></div>
           </div>
           <div class="col-md-4 form-group mt-4">
-            <input type="text" name="qualification-details" class="form-control" id="qualification-details" placeholder="Qualification Details" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <input type="text" name="qualificationDetails" class="form-control" id="qualification-details" placeholder="Qualification Details" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
             <div class="validate"></div>
           </div>
           <div class="col-md-4 form-group mt-4">
@@ -338,16 +338,16 @@
           <div class="col-md-4 form-group mt-4">
             <select name="country" id="country" class="form-select">
               <option value="">Select Country</option>
-              <option value="Department 1">Diploma</option>
-              <option value="Department 2">Post Grad</option>
-              <option value="Department 3">Under Grad</option>
-              <option value="Department 4">Post Undergrad</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
             </select>
             <div class="validate"></div>
           </div>
 
           <div class="col-md-4 form-group mt-4">
-            <input type="text" name="job-title" class="form-control" id="job-title" placeholder="Job Title" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <input type="text" name="jobTitle" class="form-control" id="job-title" placeholder="Job Title" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
             <div class="validate"></div>
           </div>
         </div>
@@ -356,14 +356,13 @@
           <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
           <div class="validate"></div>
         </div> -->
-        <div class="mb-4">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your apply request has been sent successfully. Thank you!</div>
+        <div class="text-center">
+          <button type="submit" name="submitForm">Apply Now</button>
         </div>
-        <div class="text-center"><button type="submit">Make an apply</button></div>
+        <div class="mt-4 d-flex justify-content-center">
+          <div id="res"></div>
+        </div>
       </form>
-
     </div>
   </section><!-- End apply Section -->
 
@@ -614,32 +613,12 @@
         </div>
       </div>
     </div>
-
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Grow Wiser</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Grow Wiser-free-medical-bootstrap-theme/ -->
-          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-      </div>
-    </div>
   </footer><!-- End Footer -->
 
 
 
     <!-- <script src="dist/js/main.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="dist/js/form.js"></script>
 </body>
 </html>
