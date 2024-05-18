@@ -1156,7 +1156,7 @@ min-height: 100vh;
     margin-left: 0px !important;
   }
   .skills-required li{
-    margin-left: -12px;
+    margin-left: 0px;
   }
   .main-points{
     margin-left: 0px;
@@ -1238,3 +1238,23 @@ min-height: 100vh;
   margin-left: 12px ;
   font-size: 14px;
 }
+
+.job-page-form{
+  width: 83%;
+  margin: 0 auto !important;
+  margin-bottom: 100px !important;
+}
+
+@media only screen and (max-width: 480px){
+  .job-page-form{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480px){
+  .job-page-form-alignment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
