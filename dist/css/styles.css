@@ -284,7 +284,7 @@ section {
   padding: 6px 30px 8px 30px;
   color: #fff;
   border-radius: 50px;
-  transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.2s;
 }
 
 .why-us .content .more-btn i {
@@ -489,6 +489,9 @@ margin-bottom: 14px;
   border-radius: 4px;
   margin-bottom: 14px;
   transition: 0.2s;
+}
+.jobs span{
+  margin-left: 14px;
 }
 .jobs a{
   padding-left: 14px;
@@ -1063,6 +1066,7 @@ min-height: 100vh;
 
 /* Detail Service */
 .services .icon-box-detail-service {
+  height: 320px;
   width: 380px;
   border: 1px solid #d5e1ed;
   border-radius: 8px;
@@ -1147,21 +1151,42 @@ min-height: 100vh;
   font-size: 16px;
 }
 
-.skills-required{
-  list-style-type: none;
+@media only screen and (max-width: 480px){
+  .job .container .job-info h3{
+    margin-left: 0px !important;
+  }
+  .skills-required li{
+    margin-left: -12px;
+  }
+  .main-points{
+    margin-left: 0px;
+  }
+  .job-disclaimer{
+    margin-left: 0px !important;
+  }
 }
+
 .skills-required li{
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  color: #2c4964;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 8px;
+  font-size: 16px;
+}
+.job-text{
   color: #2c4964;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 24px;
   font-size: 16px;
 }
-.skills-required li::before{
-  content: '-';
-  margin-right: 20px;
+.main-points{
+  list-style-type: '-  ';
+  margin-left: 6px;
 }
-
+.subPoints li{
+  list-style-type: '•  ';
+  margin-left: -24px;
+}
 .job-type{
   display: flex;
   flex-direction: row;
@@ -1203,4 +1228,13 @@ min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+
+.job-disclaimer{
+  color: #2c4964;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 24px;
+  margin-left: 12px ;
+  font-size: 14px;
 }
