@@ -200,7 +200,10 @@ h1,h2,h3,h4,h5,h6{
     height: 110vh;
   }
 }
-
+.icon-box .primary-button{
+  margin: 0 auto !important;
+  margin-top: 10px !important;
+}
 
 /* General */
 .breadcrumbs{
@@ -335,6 +338,12 @@ section {
   }
   .directors .container .row{
     width: 100lvw;
+  }
+  .section-title h1{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    align-items: start;
   }
 }
 
@@ -1240,8 +1249,7 @@ min-height: 100vh;
 }
 
 .job-page-form{
-  width: 83%;
-  margin: 0 auto !important;
+  max-width: 100%;
   margin-bottom: 100px !important;
 }
 
@@ -1250,11 +1258,11 @@ min-height: 100vh;
     width: 100%;
   }
 }
-@media only screen and (min-width: 480px){
+/* @media only screen and (min-width: 480px){
   .job-page-form-alignment{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
+} */
 

@@ -1,4 +1,4 @@
-let url = 'https://script.google.com/macros/s/AKfycbxLteZUO2OEKSa-NnMGbXCIBLje22xB3mZPvxFgPyOyEPTZJU1fyGJrR9SzQSs_1OGG/exec';
+let url = 'https://script.google.com/macros/s/AKfycbz7ZvHYjHKcx9nbrsszu_cYS2zAQ-EajQHEeF0JfPct5QFDe55WntBP5ZqWKVIoFxdq/exec';
 let form = document.querySelector('#applicationForm');
 
 form.addEventListener("submit", (e)=>{
