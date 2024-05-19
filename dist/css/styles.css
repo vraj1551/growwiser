@@ -1190,6 +1190,7 @@ min-height: 100vh;
 }
 .main-points{
   list-style-type: '-  ';
+  color: #2c4964;
   margin-left: 6px;
 }
 .subPoints li{
